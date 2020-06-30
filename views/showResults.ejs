@@ -1,0 +1,29 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+    <h2>Gender</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].gender %> :  <%= results[0][i].count %></li>
+    <% } %>
+    </ul>
+    <h2>Experience</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].experience %> :  <%= results[1][i].count %></li>
+    <% } %>
+    </ul>
+
+    <h2>Age</h2>
+    <ul>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].age %> :  <%= results[2][i].count %></li>
+    <% } %>
+    </ul>
+
+</body>
+</html>
